@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');/*import google fonts here*/
+
+* {
+    margin: 0 /*your code here*/;
+    padding: 0 /*your code here*/;
+    /*your code here*/box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif; /*your code here*/;
+    color: #151515;
+}
+
+.movie-card {
+    margin-top: 5rem/*your code here*/;
+    height: 800px;
+    text-align: center /*your code here*/;
+}
+
+.movie-title {
+    text-transform: uppercase /*your code here*/;
+    opacity: 0;
+    animation: fade-in 3.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fade-in {
+    100% {opacity: 1;}
+}
+
+.movie-genres {
+    opacity: 0;
+    animation: fade-in 3.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fade-in {
+    100% {opacity: 1;}
+}
+
+.movie-poster-container img {
+    margin-top: 2.7rem;
+    margin-bottom: 2rem;
+    height: 800px /*your code here*/;
+    border-radius: 20px/*your code here*/; 
+    position: relative;
+    right: -100rem;
+    animation: slide-from-right 3.5s ease-in-out forwards
+}
+
+@keyframes slide-from-right {
+    80% {right: 3rem;}
+    100% {right: 0;}
+}
+
+.movie-poster-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 8px -4px rgb(92, 85, 85);
+}
+
+.movie-info-container > *:not(.movie-info-actions){
+    transform: translateY(400px);
+    animation: slide-from-bottom1 3.5s ease-in-out forwards;
+}
+
+@keyframes slide-from-bottom1 {
+    80% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+}
+
+.movie-info-actions {
+    transform: translateY(400px);
+    animation: slide-from-bottom2 3.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide-from-bottom2 {
+    100% {transform: translateY(0);}
+}
+
+.movie-rating {
+    display: inline-block /*your code here*/;
+    border: 1px solid #151515;
+    padding: 0.3rem /*your code here*/;
+    border-radius: 5px;
+}
+
+.movie-duration {
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.movie-duration:before {
+    content: "\2022" /*your code here*/;
+}
+
+.movie-info-quote {
+    color: #151515a4;
+    font-style: italic /*your code here*/;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.movie-info-overview-title {
+    text-transform: capitalize /*your code here*/;
+    letter-spacing: 0.1rem;
+}
+
+.movie-info-actions {
+    font-size:1.1rem;
+}
+
+.movie-info-actions ul {
+    list-style: none;
+}
+
+.movie-info-actions ul li {
+    display: inline-block /*your code here*/;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(3, 37, 65);
+    
+}
+
+.movie-info-actions ul li a {
+    text-decoration: none /*your code here*/;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 27rem;
+    text-align: center /*your code here*/;
+    color: #777;
+    transform: translateY(400px);
+    animation: slide-from-bottom3 3.5s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes slide-from-bottom3 {
+    100% {transform: translateY(0);}
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block /*your code here*/;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer ul li a {
+    font-size: 1.5rem;
+    text-transform: uppercase /*your code here*/;
+    text-decoration: none;
+    color: #777;
+}

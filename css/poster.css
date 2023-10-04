@@ -57,7 +57,7 @@ html {
 
 .movie-poster-container img:hover {
     transform: scale(1.1);
-    box-shadow: 8px 8px 8px -4px rgb(92, 85, 85);
+    box-shadow: 8px 8px 8px -4px rgb(86, 85, 92);
 }
 
 .movie-info-container > *:not(.movie-info-actions){

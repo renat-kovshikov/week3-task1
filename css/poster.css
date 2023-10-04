@@ -169,3 +169,46 @@ footer ul li a {
     text-decoration: none;
     color: #777;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:  rgba(149, 162, 197, 0.253);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+}
+
+.modal-content {
+    background-color: rgb(149, 162, 197);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 550px;
+    height: 750px;
+    animation: zoom-in 1s;
+    border-radius: 20px;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 300px;
+}
+
+.movie-poster {
+    width: 300px;
+    cursor: pointer;
+}

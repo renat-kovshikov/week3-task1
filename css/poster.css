@@ -70,6 +70,61 @@ html {
     100% {transform: translateY(0);}
 }
 
+.container {
+    width: 75%;
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 20px
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.carousel .carousel__actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-125%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(121, 127, 133, 0.781);
+    font-size: 1.5rem;
+    color: white;
+    margin: 0.75rem;
+}
+
 .movie-info-actions {
     transform: translateY(500px);
     animation: slide-from-bottom2 3.5s ease-in-out forwards;
